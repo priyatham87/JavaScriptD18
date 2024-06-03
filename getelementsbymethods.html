@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="psp">sai</h1>
+    <h1 class="psp">priyatham</h1>
+    <i class="psp">italicparagraph</i>
+
+    <p id="p">paragraph</p>
+    <p id="p">Tag</p>
+    <h2 id="p">hello</h2>
+
+    <h3>sai priyatham</h3>
+
+    <h4>1</h4>
+    <h4>2</h4>
+    <h4>3</h4>
+    <h4>4</h4>
+    <h4>5</h4>
+    <h4>6</h4>
+    <h4>7</h4>
+    <h4>8</h4>
+    <h4>9</h4>
+    <h4>10</h4>
+
+    <script>
+        a=document.getElementsByTagName("h1")
+        console.log(a);
+        temp="";
+        for(i=0;i<a.length;i++)
+        {
+            temp=temp+" "+a[i].innerText
+        }
+        console.log(temp);
+
+
+        b=document.getElementsByTagName("p")
+        console.log(b);
+        temp="";
+        for(i=0;i<b.length;i++)
+        {
+            temp=temp+" "+b[i].innerText
+        }
+        console.log(temp);
+
+        c=document.getElementsByClassName("psp")
+        console.log(c);
+        temp="";
+        for(i=0;i<c.length;i++)
+        {
+            temp=temp+" "+c[i].innerText
+        }
+        console.log(temp);
+
+
+        d=document.getElementById("p")
+        console.log(d);
+        temp="";
+        for(i=0;i<d.length;i++)
+        {
+            temp=temp+" "+d[i].innerText
+        }
+        console.log(temp);
+
+        e=document.getElementsByTagName("h3")
+        e[0].style.color="red";
+        console.log(e[0]);
+
+
+        f=document.getElementsByTagName("h4")
+        for(i=0;i<f.length;i++)
+        {
+            if(i%2==0)
+            {
+                f[i].style.color="green";
+                console.log(f[i]);
+            }
+            else
+            {
+                f[i].style.color="red";
+                console.log(f[i]);
+
+            }
+        }
+
+    </script>
+
+
+    
+</body>
+</html>
